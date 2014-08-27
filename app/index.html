@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang='en' ng-app='FauxPasReportApp'>
+<head ng-controller="DiagnosticsSetController">
+    <meta charset='utf-8' />
+    <title>{{diags_set.projectName}} — Faux Pas Report</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js"></script>
+    <script src="angularjs-nvd3-directives.js"></script>
+    <script src='report.js'></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.css" />
+
+    <link rel="stylesheet/less" type="text/css" href="report.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.4/less.min.js"></script>
+</head>
+<body>
+
+    <div class="errors" ng-controller="AppErrorsController">
+        <ul ng-if="0 < errors.length">
+            <li ng-repeat="error in errors track by $index">
+                {{error}}
+            </li>
+        </ul>
+    </div>
+
+    <div class="header" ng-controller="DiagnosticsSetController" ng-hide="!diags_set">
+        <img ng-if="!!diags_set.projectIconBase64PNG" src="data:image/png;base64,{{diags_set.projectIconBase64PNG}}" width="60" height="60" />
+        <div>
+            <h1>{{diags_set.projectName}}</h1>
+            <div class="info">
+                <div>
+                    <div class="subtitle">Faux Pas Report</div>
+                    <div class="subtitle">{{diags_set.timeStamp * 1000 | date:'medium'}}</div>
+                </div>
+                <ul>
+                    <li>
+                        <span class="name">Target:</span>
+                        <span class="value">{{diags_set.targetName}}</span>
+                    </li>
+                    <li>
+                        <span class="name">Build Configuration:</span>
+                        <span class="value">{{diags_set.buildConfigurationName}}</span>
+                    </li>
+                    <li>
+                        <span class="name">Bundle Version:</span>
+                        <span class="value">{{diags_set.targetBundleVersion}}</span>
+                    </li>
+                    <li>
+                        <span class="name">Faux Pas Version:</span>
+                        <span class="value">{{diags_set.fauxPasVersion}}</span>
+                    </li>
+                    <li ng-if="!!diags_set.versionControlRevision">
+                        <span class="name">{{diags_set.versionControlSystemName}} Revision:</span>
+                        <span class="value monospaced">{{diags_set.versionControlRevision | limitTo: 7}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section stats" ng-controller="DiagnosticsSetController" ng-hide="!diags_set">
+        <h2>Statistics</h2>
+
+        <div ng-repeat="stat in stats.counts" class="count-stats {{stat.title}}-count-stats">
+            <h3>{{stat.title}}</h3>
+            <nvd3-pie-chart
+                id="stat-{{stat.title}}-pie-chart"
+                width="300"
+                height="200"
+                data="stat.values"
+                x="chart_functions.x"
+                y="chart_functions.y"
+                color="chart_functions.color"
+                showLabels="false"
+                tooltips="true"
+                >
+                <svg width="300" height="200"></svg>
+            </nvd3-pie-chart>
+            <table>
+                <tr>
+                    <th>{{stat.title}}</th>
+                    <th>Count</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr ng-repeat="value in stat.values">
+                    <td>{{value.name}}</td>
+                    <td>{{value.count}}</td>
+                    <td>{{value.percent | number:1}} %</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="section diagnostics" ng-controller="DiagnosticsSetController" ng-hide="!diags_set">
+        <h2>Diagnostics</h2>
+        <div class="subtitle">Total {{diags_set.diagnostics.length}}</div>
+
+        <table>
+            <tr>
+                <th>Rule + Info</th>
+                <th>File</th>
+                <th class="severity">Severity</th>
+                <th class="impact">Impact</th>
+                <th class="confidence">Confidence</th>
+            </tr>
+            <tr ng-repeat="diag in diags_set.diagnostics" class="diagnostic">
+                <td class="rule-info" title="{{diag.ruleDescription}}">
+                    <div class="rule-name" ng-bind-html="diag.html.ruleName | to_trusted"></div>
+                    <div class="info" ng-bind-html="diag.html.info | to_trusted"></div>
+                </td>
+                <td class="file" title="{{diag.file}}">
+                    <span class="filename">
+                        {{diag.file | basename}}
+                    </span>
+                    <span ng-if="diag.extent.end.line != 0" class="file-position">
+                        [{{diag.extent.start.line}}:{{diag.extent.start.utf16Column}}–{{diag.extent.end.line}}:{{diag.extent.end.utf16Column}}]
+                    </span>
+                    <div ng-if="!!diag.fileSnippet" class="file-snippet"><div class="content">{{diag.fileSnippet}}</div></div>
+                </td>
+                <td class="severity">{{diag.severityDescription}}</td>
+                <td class="impact">{{diag.impact}}</td>
+                <td class="confidence">{{diag.confidenceDescription}}</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

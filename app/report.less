@@ -1,0 +1,183 @@
+
+@monospacefonts: Monaco, Consolas, monospace;
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #eee;
+  color: #111;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+
+  > * {
+    margin: 0 20px;
+  }
+}
+
+table {
+  margin-top: 10px;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  th {
+    text-align: center;
+    background: #ccc;
+  }
+}
+
+.monospaced {
+  font-family: @monospacefonts;
+}
+
+.errors {
+  margin: 0;
+  padding: 0;
+  ul {
+    margin: 0;
+    padding: 20px;
+    background: #ff8888;
+    color: #660000;
+    li {
+      margin-left: 20px;
+    }
+  }
+}
+
+.header {
+  margin: 0;
+  padding: 20px;
+  background: #555;
+  color: #aaa;
+  .clearfix;
+
+  > img {
+    float: left;
+    margin-right: 20px;
+  }
+  > div {
+    h1 {
+      margin: 0 0 10px 0;
+      color: #eee;
+    }
+
+    .info {
+      .clearfix;
+      > * {
+        float: left;
+      }
+      ul {
+        margin: 0 0 0 50px;
+        padding: 0;
+        list-style: none;
+        li {
+          .name {
+            font-weight: bold;
+          }
+          .value {
+            color: #eee;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section {
+  > h2 {
+    margin: 20px 0 5px 0;
+  }
+}
+.subtitle {
+  color: #aaa;
+}
+
+.section.stats {
+  .clearfix;
+
+  .count-stats {
+    width: 300px;
+    float: left;
+    margin-right: 10px;
+    // Hack to adjust the pie chart a bit:
+    nvd3-pie-chart {
+      svg {
+        .nv-pieChart {
+          transform: scale(2);
+          -webkit-transform: scale(2);
+          -moz-transform: scale(2);
+          -ms-transform: scale(2);
+          -opera-transform: scale(2);
+          transform-origin-x: 50px;
+          -webkit-transform-origin-x: 50px;
+          -moz-transform-origin-x: 50px;
+          -ms-transform-origin-x: 50px;
+          -o-transform-origin-x: 50px;
+        }
+      }
+    }
+    table {
+      td {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.section.diagnostics {
+  table {
+    font-size: 14px;
+    table-layout: fixed;
+    th, td {
+      word-wrap: break-word;
+      padding: 5px;
+    }
+    th.severity,
+    th.impact,
+    th.confidence {
+      width: 90px;
+    }
+    tr:nth-child(odd) {
+      background: #ddd;
+    }
+    tr.diagnostic {
+      .rule-info {
+        .rule-name {
+          font-weight: bold;
+        }
+        .info {
+          font-size: 12px;
+        }
+      }
+      .file {
+        font-family: @monospacefonts;
+        font-size: 12px;
+        .file-snippet {
+          .content {
+            padding: 10px;
+            margin: 5px 0;
+            white-space: pre;
+            word-wrap: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: 103px;
+            background: #ccc;
+          }
+        }
+      }
+      .severity,
+      .impact,
+      .confidence {
+        text-align: center;
+      }
+    }
+  }
+}
+

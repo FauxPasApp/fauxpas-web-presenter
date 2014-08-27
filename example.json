@@ -1,0 +1,872 @@
+{
+  "buildConfigurationName": "Release",
+  "diagnostics": [
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": "viewDidLoad",
+      "extent": {
+        "end": {
+          "byteColumn": 32,
+          "byteOffset": 565,
+          "line": 26,
+          "utf16Column": 31,
+          "utf16Offset": 565
+        },
+        "start": {
+          "byteColumn": 5,
+          "byteOffset": 538,
+          "line": 26,
+          "utf16Column": 4,
+          "utf16Offset": 538
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRViewController.m",
+      "fileSnippet": "self.title = @\"Preferences\"",
+      "html": {
+        "info": "<code class=\"fauxpas-objcproperty\">UIViewController.title</code> value set to string <code class=\"fauxpas-string\">Preferences</code>",
+        "ruleDescription": "All strings that are given to APIs that display them in the user interface should be routed through <code class=\"fauxpas-codesymbol\">NSLocalizedString()</code> and friends.",
+        "ruleName": "UI String not localized",
+        "ruleShortName": "HardcodedUIString",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Functionality",
+      "info": "UIViewController.title value set to string Preferences",
+      "ruleDescription": "All strings that are given to APIs that display them in the user interface should be routed through NSLocalizedString() and friends.",
+      "ruleName": "UI String not localized",
+      "ruleShortName": "HardcodedUIString",
+      "ruleWarning": null,
+      "severity": 9,
+      "severityDescription": "Error"
+    },
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRAppDelegate.m",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The following warning flags are not enabled:</p> <ul><li><div class=\"fauxpas-green\"><strong>-Wall</strong></div> — Enables all warnings that have a high confidence value and low rate of false positives.</li> <li><div class=\"fauxpas-green\"><strong>-Wconversion</strong></div> — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (<code>CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wdeprecated-implementations</strong></div> — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (<code>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Werror</strong></div> — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (<code>GCC_TREAT_WARNINGS_AS_ERRORS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wextra</strong></div> — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections.</li> <li><div class=\"fauxpas-green\"><strong>-Wfloat-equal</strong></div> — Warns if floating-point values are used in equality comparisons.</li> <li><div class=\"fauxpas-green\"><strong>-Wimplicit-retain-self</strong></div> — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (<code>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wnewline-eof</strong></div> — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (<code>GCC_WARN_ABOUT_MISSING_NEWLINE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wshadow</strong></div> — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (<code>GCC_WARN_SHADOW</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wsign-compare</strong></div> — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (<code>GCC_WARN_SIGN_COMPARE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wundef</strong></div> — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.</li></ul>",
+        "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+        "ruleName": "Recommended compiler warning options",
+        "ruleShortName": "CompilerWarnings",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Maintainability",
+      "info": "The following warning flags are not enabled: -Wall — Enables all warnings that have a high confidence value and low rate of false positives. -Wconversion — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION) Xcode setting controls this. -Wdeprecated-implementations — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS) Xcode setting controls this. -Werror — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (GCC_TREAT_WARNINGS_AS_ERRORS) Xcode setting controls this. -Wextra — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections. -Wfloat-equal — Warns if floating-point values are used in equality comparisons. -Wimplicit-retain-self — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF) Xcode setting controls this. -Wnewline-eof — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (GCC_WARN_ABOUT_MISSING_NEWLINE) Xcode setting controls this. -Wshadow — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (GCC_WARN_SHADOW) Xcode setting controls this. -Wsign-compare — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (GCC_WARN_SIGN_COMPARE) Xcode setting controls this. -Wundef — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.",
+      "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+      "ruleName": "Recommended compiler warning options",
+      "ruleShortName": "CompilerWarnings",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 2,
+      "confidenceDescription": "Low",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/Arrow.png",
+      "fileSnippet": null,
+      "html": {
+        "info": null,
+        "ruleDescription": "Warns about resource files that do not seem to be referred to in code or XIBs.",
+        "ruleName": "Possibly unused resource",
+        "ruleShortName": "UnusedResource",
+        "ruleWarning": "Please ensure that each resource you remove from your project is in fact unused — in some cases this rule may flag resource files that are not actually unused (for example if file name references are somehow dynamically determined)."
+      },
+      "identifier": null,
+      "impact": "Maintainability",
+      "info": null,
+      "ruleDescription": "Warns about resource files that do not seem to be referred to in code or XIBs.",
+      "ruleName": "Possibly unused resource",
+      "ruleShortName": "UnusedResource",
+      "ruleWarning": "Please ensure that each resource you remove from your project is in fact unused — in some cases this rule may flag resource files that are not actually unused (for example if file name references are somehow dynamically determined).",
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 5,
+      "confidenceDescription": "Medium",
+      "context": "viewDidLoad",
+      "extent": {
+        "end": {
+          "byteColumn": 70,
+          "byteOffset": 527,
+          "line": 24,
+          "utf16Column": 69,
+          "utf16Offset": 527
+        },
+        "start": {
+          "byteColumn": 28,
+          "byteOffset": 485,
+          "line": 24,
+          "utf16Column": 27,
+          "utf16Offset": 485
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRViewController.m",
+      "fileSnippet": "[UIImage imageNamed:@\"placeholder_avatar\"]",
+      "html": {
+        "info": "<p>Attempt to load unknown resource named <code class=\"fauxpas-string\">placeholder_avatar</code> (image). Did you mean <code class=\"fauxpas-string\">avatar_placeholder.png</code>?</p>",
+        "ruleDescription": "Resources loaded from disk at runtime should be included in the bundle resources under the correct path. Remember that unlike most Macs (and thus iOS simulators run on those Macs), iOS devices have a case sensitive filesystem.",
+        "ruleName": "Code refers to unknown resource",
+        "ruleShortName": "UnknownResourceCodeReference",
+        "ruleWarning": null
+      },
+      "identifier": "placeholder_avatar",
+      "impact": "Functionality",
+      "info": "Attempt to load unknown resource named placeholder_avatar (image). Did you mean avatar_placeholder.png?",
+      "ruleDescription": "Resources loaded from disk at runtime should be included in the bundle resources under the correct path. Remember that unlike most Macs (and thus iOS simulators run on those Macs), iOS devices have a case sensitive filesystem.",
+      "ruleName": "Code refers to unknown resource",
+      "ruleShortName": "UnknownResourceCodeReference",
+      "ruleWarning": null,
+      "severity": 9,
+      "severityDescription": "Error"
+    },
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/main.m",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The following warning flags are not enabled:</p> <ul><li><div class=\"fauxpas-green\"><strong>-Wall</strong></div> — Enables all warnings that have a high confidence value and low rate of false positives.</li> <li><div class=\"fauxpas-green\"><strong>-Wconversion</strong></div> — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (<code>CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wdeprecated-implementations</strong></div> — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (<code>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Werror</strong></div> — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (<code>GCC_TREAT_WARNINGS_AS_ERRORS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wextra</strong></div> — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections.</li> <li><div class=\"fauxpas-green\"><strong>-Wfloat-equal</strong></div> — Warns if floating-point values are used in equality comparisons.</li> <li><div class=\"fauxpas-green\"><strong>-Wimplicit-retain-self</strong></div> — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (<code>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wnewline-eof</strong></div> — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (<code>GCC_WARN_ABOUT_MISSING_NEWLINE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wshadow</strong></div> — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (<code>GCC_WARN_SHADOW</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wsign-compare</strong></div> — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (<code>GCC_WARN_SIGN_COMPARE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wundef</strong></div> — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.</li></ul>",
+        "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+        "ruleName": "Recommended compiler warning options",
+        "ruleShortName": "CompilerWarnings",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Maintainability",
+      "info": "The following warning flags are not enabled: -Wall — Enables all warnings that have a high confidence value and low rate of false positives. -Wconversion — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION) Xcode setting controls this. -Wdeprecated-implementations — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS) Xcode setting controls this. -Werror — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (GCC_TREAT_WARNINGS_AS_ERRORS) Xcode setting controls this. -Wextra — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections. -Wfloat-equal — Warns if floating-point values are used in equality comparisons. -Wimplicit-retain-self — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF) Xcode setting controls this. -Wnewline-eof — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (GCC_WARN_ABOUT_MISSING_NEWLINE) Xcode setting controls this. -Wshadow — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (GCC_WARN_SHADOW) Xcode setting controls this. -Wsign-compare — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (GCC_WARN_SIGN_COMPARE) Xcode setting controls this. -Wundef — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.",
+      "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+      "ruleName": "Recommended compiler warning options",
+      "ruleShortName": "CompilerWarnings",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 79,
+          "byteOffset": 1185,
+          "line": 49,
+          "utf16Column": 78,
+          "utf16Offset": 1185
+        },
+        "start": {
+          "byteColumn": 33,
+          "byteOffset": 1139,
+          "line": 49,
+          "utf16Column": 32,
+          "utf16Offset": 1139
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRViewController.m",
+      "fileSnippet": "NSLocalizedString(@\"Spline Reticulation\", nil)",
+      "html": {
+        "info": null,
+        "ruleDescription": "Warns if <code class=\"fauxpas-cmacro\">NSLocalizedString()</code> or one of its variants is used without a non-empty comment argument.",
+        "ruleName": "Uncommented localized string",
+        "ruleShortName": "UncommentedLocalizedString",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Maintainability",
+      "info": null,
+      "ruleDescription": "Warns if NSLocalizedString() or one of its variants is used without a non-empty comment argument.",
+      "ruleName": "Uncommented localized string",
+      "ruleShortName": "UncommentedLocalizedString",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": null,
+      "fileSnippet": null,
+      "html": {
+        "info": "The value of the <code>Bundle identifier</code> is <code class=\"fauxpas-string\">org.hasseg.${PRODUCT_NAME:rfc1034identifier}</code>. Choose an explicit value to remove dependencies to build-time variables.",
+        "ruleDescription": "It is recommended to choose an explicit value for the bundle identifier: an explicit, matching value must be chosen in iTunes Connect before publishing in the App Store (Xcode by default makes the bundle ID dependent on the <code>PRODUCT_NAME</code> variable).",
+        "ruleName": "Implicit bundle identifier",
+        "ruleShortName": "ImplicitBundleId",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Maintainability",
+      "info": "The value of the Bundle identifier is org.hasseg.${PRODUCT_NAME:rfc1034identifier}. Choose an explicit value to remove dependencies to build-time variables.",
+      "ruleDescription": "It is recommended to choose an explicit value for the bundle identifier: an explicit, matching value must be chosen in iTunes Connect before publishing in the App Store (Xcode by default makes the bundle ID dependent on the PRODUCT_NAME variable).",
+      "ruleName": "Implicit bundle identifier",
+      "ruleShortName": "ImplicitBundleId",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 2,
+      "confidenceDescription": "Low",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/avatar_placeholder.png",
+      "fileSnippet": null,
+      "html": {
+        "info": null,
+        "ruleDescription": "Warns about resource files that do not seem to be referred to in code or XIBs.",
+        "ruleName": "Possibly unused resource",
+        "ruleShortName": "UnusedResource",
+        "ruleWarning": "Please ensure that each resource you remove from your project is in fact unused — in some cases this rule may flag resource files that are not actually unused (for example if file name references are somehow dynamically determined)."
+      },
+      "identifier": null,
+      "impact": "Maintainability",
+      "info": null,
+      "ruleDescription": "Warns about resource files that do not seem to be referred to in code or XIBs.",
+      "ruleName": "Possibly unused resource",
+      "ruleShortName": "UnusedResource",
+      "ruleWarning": "Please ensure that each resource you remove from your project is in fact unused — in some cases this rule may flag resource files that are not actually unused (for example if file name references are somehow dynamically determined).",
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": null,
+      "fileSnippet": null,
+      "html": {
+        "info": "Required compiler argument <code>-DNDEBUG</code> is not used. This argument disables the C standard library assertion macro (as defined in <code>assert.h</code>).",
+        "ruleDescription": "For release builds, warns when some expected arguments are missing, or some unexpected arguments are present.",
+        "ruleName": "Problematic release build compiler arguments",
+        "ruleShortName": "ReleaseBuildCompilerArgs",
+        "ruleWarning": null
+      },
+      "identifier": "-DNDEBUG",
+      "impact": "Functionality",
+      "info": "Required compiler argument -DNDEBUG is not used. This argument disables the C standard library assertion macro (as defined in assert.h).",
+      "ruleDescription": "For release builds, warns when some expected arguments are missing, or some unexpected arguments are present.",
+      "ruleName": "Problematic release build compiler arguments",
+      "ruleShortName": "ReleaseBuildCompilerArgs",
+      "ruleWarning": null,
+      "severity": 9,
+      "severityDescription": "Error"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/fi.lproj/Localizable.strings",
+      "fileSnippet": null,
+      "html": {
+        "info": "The Finnish translation for <code class=\"fauxpas-string\">Spline Reticulation</code> is missing",
+        "ruleDescription": "Warns if a translation is missing for a key that is used as argument to <code class=\"fauxpas-cmacro\">NSLocalizedString</code> or its variants.",
+        "ruleName": "Missing translation",
+        "ruleShortName": "MissingTranslation",
+        "ruleWarning": null
+      },
+      "identifier": "Spline Reticulation",
+      "impact": "Functionality",
+      "info": "The Finnish translation for Spline Reticulation is missing",
+      "ruleDescription": "Warns if a translation is missing for a key that is used as argument to NSLocalizedString or its variants.",
+      "ruleName": "Missing translation",
+      "ruleShortName": "MissingTranslation",
+      "ruleWarning": null,
+      "severity": 9,
+      "severityDescription": "Error"
+    },
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRViewController.m",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The following warning flags are not enabled:</p> <ul><li><div class=\"fauxpas-green\"><strong>-Wall</strong></div> — Enables all warnings that have a high confidence value and low rate of false positives.</li> <li><div class=\"fauxpas-green\"><strong>-Wconversion</strong></div> — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (<code>CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wdeprecated-implementations</strong></div> — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (<code>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Werror</strong></div> — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (<code>GCC_TREAT_WARNINGS_AS_ERRORS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wextra</strong></div> — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections.</li> <li><div class=\"fauxpas-green\"><strong>-Wfloat-equal</strong></div> — Warns if floating-point values are used in equality comparisons.</li> <li><div class=\"fauxpas-green\"><strong>-Wimplicit-retain-self</strong></div> — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (<code>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wnewline-eof</strong></div> — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (<code>GCC_WARN_ABOUT_MISSING_NEWLINE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wshadow</strong></div> — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (<code>GCC_WARN_SHADOW</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wsign-compare</strong></div> — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (<code>GCC_WARN_SIGN_COMPARE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-green\"><strong>-Wundef</strong></div> — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.</li></ul>",
+        "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+        "ruleName": "Recommended compiler warning options",
+        "ruleShortName": "CompilerWarnings",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Maintainability",
+      "info": "The following warning flags are not enabled: -Wall — Enables all warnings that have a high confidence value and low rate of false positives. -Wconversion — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION) Xcode setting controls this. -Wdeprecated-implementations — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS) Xcode setting controls this. -Werror — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (GCC_TREAT_WARNINGS_AS_ERRORS) Xcode setting controls this. -Wextra — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections. -Wfloat-equal — Warns if floating-point values are used in equality comparisons. -Wimplicit-retain-self — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF) Xcode setting controls this. -Wnewline-eof — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (GCC_WARN_ABOUT_MISSING_NEWLINE) Xcode setting controls this. -Wshadow — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (GCC_WARN_SHADOW) Xcode setting controls this. -Wsign-compare — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (GCC_WARN_SIGN_COMPARE) Xcode setting controls this. -Wundef — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.",
+      "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+      "ruleName": "Recommended compiler warning options",
+      "ruleShortName": "CompilerWarnings",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 5,
+      "confidenceDescription": "Medium",
+      "context": "doTheThing",
+      "extent": {
+        "end": {
+          "byteColumn": 8,
+          "byteOffset": 1195,
+          "line": 50,
+          "utf16Column": 7,
+          "utf16Offset": 1195
+        },
+        "start": {
+          "byteColumn": 5,
+          "byteOffset": 938,
+          "line": 44,
+          "utf16Column": 4,
+          "utf16Offset": 938
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRViewController.m",
+      "fileSnippet": "[NSNotificationCenter.defaultCenter\n     addObserverForName:@\"something\"\n     object:nil\n     queue:NSOperationQueue.mainQueue\n     usingBlock:^(NSNotification *note) {\n         NSLog(@\"Notified! %@\", NSLocalizedString(@\"Spline Reticulation\", nil));\n     }]",
+      "html": {
+        "info": null,
+        "ruleDescription": "Warns if the return value of <code class=\"fauxpas-objcmethod\">-[NSNotificationCenter addObserverForName:object:queue:usingBlock:]</code> is not stored anywhere. This method returns an opaque observer object that is needed in order to stop observing.",
+        "ruleName": "Discarded opaque <code class=\"fauxpas-objcclass\">NSNotificationCenter</code> observer",
+        "ruleShortName": "DiscardedOpaqueNotificationObserver",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Functionality",
+      "info": null,
+      "ruleDescription": "Warns if the return value of -[NSNotificationCenter addObserverForName:object:queue:usingBlock:] is not stored anywhere. This method returns an opaque observer object that is needed in order to stop observing.",
+      "ruleName": "Discarded opaque NSNotificationCenter observer",
+      "ruleShortName": "DiscardedOpaqueNotificationObserver",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 5,
+      "confidenceDescription": "Medium",
+      "context": "didReceiveMemoryWarning",
+      "extent": {
+        "end": {
+          "byteColumn": 57,
+          "byteOffset": 703,
+          "line": 33,
+          "utf16Column": 56,
+          "utf16Offset": 703
+        },
+        "start": {
+          "byteColumn": 28,
+          "byteOffset": 674,
+          "line": 33,
+          "utf16Column": 27,
+          "utf16Offset": 674
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRViewController.m",
+      "fileSnippet": "[UIImage imageNamed:@\"arrow\"]",
+      "html": {
+        "info": "<p>Attempt to load unknown resource named <code class=\"fauxpas-string\">arrow</code> (image). Did you mean <code class=\"fauxpas-string\">Arrow.png</code>?</p>",
+        "ruleDescription": "Resources loaded from disk at runtime should be included in the bundle resources under the correct path. Remember that unlike most Macs (and thus iOS simulators run on those Macs), iOS devices have a case sensitive filesystem.",
+        "ruleName": "Code refers to unknown resource",
+        "ruleShortName": "UnknownResourceCodeReference",
+        "ruleWarning": null
+      },
+      "identifier": "arrow",
+      "impact": "Functionality",
+      "info": "Attempt to load unknown resource named arrow (image). Did you mean Arrow.png?",
+      "ruleDescription": "Resources loaded from disk at runtime should be included in the bundle resources under the correct path. Remember that unlike most Macs (and thus iOS simulators run on those Macs), iOS devices have a case sensitive filesystem.",
+      "ruleName": "Code refers to unknown resource",
+      "ruleShortName": "UnknownResourceCodeReference",
+      "ruleWarning": null,
+      "severity": 9,
+      "severityDescription": "Error"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": "doTheThing",
+      "extent": {
+        "end": {
+          "byteColumn": 80,
+          "byteOffset": 1186,
+          "line": 49,
+          "utf16Column": 79,
+          "utf16Offset": 1186
+        },
+        "start": {
+          "byteColumn": 10,
+          "byteOffset": 1116,
+          "line": 49,
+          "utf16Column": 9,
+          "utf16Offset": 1116
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRViewController.m",
+      "fileSnippet": "NSLog(@\"Notified! %@\", NSLocalizedString(@\"Spline Reticulation\", nil))",
+      "html": {
+        "info": null,
+        "ruleDescription": "Logging should be disabled in release builds (except perhaps for fatal errors).",
+        "ruleName": "<code class=\"fauxpas-codesymbol\">NSLog()</code> used in release build",
+        "ruleShortName": "NSLogUsed",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Functionality",
+      "info": null,
+      "ruleDescription": "Logging should be disabled in release builds (except perhaps for fatal errors).",
+      "ruleName": "NSLog() used in release build",
+      "ruleShortName": "NSLogUsed",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 5,
+      "confidenceDescription": "Medium",
+      "context": "AMRViewController",
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 931,
+          "line": 43,
+          "utf16Column": 19,
+          "utf16Offset": 931
+        },
+        "start": {
+          "byteColumn": 1,
+          "byteOffset": 912,
+          "line": 42,
+          "utf16Column": 0,
+          "utf16Offset": 912
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/AMRViewController.m",
+      "fileSnippet": "- (void) doTheThing",
+      "html": {
+        "info": null,
+        "ruleDescription": "<p>Warns about Objective-C methods to which no references are found.</p> <p>This rule will not warn about <code class=\"fauxpas-codesymbol\">IBAction</code> methods, initializer methods, or public methods (methods with a declaration in a header file, excluding header files named in the form <code class=\"fauxpas-string\">*+Private.h</code>). It also won't warn about unused getter methods whose setter is used, and vice versa.</p>",
+        "ruleName": "Possibly unused Objective-C method",
+        "ruleShortName": "UnusedMethod",
+        "ruleWarning": "Please ensure that each method you remove from your code is in fact unused — in some cases this rule may flag methods that are not actually unused (for example some that are referenced from code that has not been checked by this tool)."
+      },
+      "identifier": "-[AMRViewController doTheThing]",
+      "impact": "Maintainability",
+      "info": null,
+      "ruleDescription": "Warns about Objective-C methods to which no references are found. This rule will not warn about IBAction methods, initializer methods, or public methods (methods with a declaration in a header file, excluding header files named in the form *+Private.h). It also won't warn about unused getter methods whose setter is used, and vice versa.",
+      "ruleName": "Possibly unused Objective-C method",
+      "ruleShortName": "UnusedMethod",
+      "ruleWarning": "Please ensure that each method you remove from your code is in fact unused — in some cases this rule may flag methods that are not actually unused (for example some that are referenced from code that has not been checked by this tool).",
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 5,
+      "confidenceDescription": "Medium",
+      "context": "main(int, char **)",
+      "extent": {
+        "end": {
+          "byteColumn": 91,
+          "byteOffset": 334,
+          "line": 16,
+          "utf16Column": 90,
+          "utf16Offset": 334
+        },
+        "start": {
+          "byteColumn": 69,
+          "byteOffset": 312,
+          "line": 16,
+          "utf16Column": 68,
+          "utf16Offset": 312
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/main.m",
+      "fileSnippet": "[AMRAppDelegate class]",
+      "html": {
+        "info": null,
+        "ruleDescription": "<p>Warns about <code>[obj foo]</code> or <code>[obj setFoo:x]</code> instead of <code>obj.foo</code> or <code>obj.foo = x</code>.</p> <p>Can also be configured to enforce dot syntax only for accessors declared with the <code>@property</code> syntax.</p>",
+        "ruleName": "Dot syntax usage",
+        "ruleShortName": "DotSyntax",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Style",
+      "info": null,
+      "ruleDescription": "Warns about [obj foo] or [obj setFoo:x] instead of obj.foo or obj.foo = x. Can also be configured to enforce dot syntax only for accessors declared with the @property syntax.",
+      "ruleName": "Dot syntax usage",
+      "ruleShortName": "DotSyntax",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/avatar_placeholder.png",
+      "fileSnippet": null,
+      "html": {
+        "info": "The 'retina' version of this image is missing.",
+        "ruleDescription": "Warns when either the high-resolution (@2x) or the low-resolution variant of an image resource is missing.",
+        "ruleName": "Missing image resolution variant",
+        "ruleShortName": "MissingImageResolutionVariant",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Functionality",
+      "info": "The 'retina' version of this image is missing.",
+      "ruleDescription": "Warns when either the high-resolution (@2x) or the low-resolution variant of an image resource is missing.",
+      "ruleName": "Missing image resolution variant",
+      "ruleShortName": "MissingImageResolutionVariant",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 5,
+      "confidenceDescription": "Medium",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/fi.lproj/Localizable.strings",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The Finnish translation for <code class=\"fauxpas-string\">Greeting</code> has different format specifiers than the English translation.</p><ul><li>Finnish: <code class=\"fauxpas-string\">Hyvää %s, %@!</code></li><li>English: <code class=\"fauxpas-string\">Good %@, %@!</code></li></ul>",
+        "ruleDescription": "Warns when different language translations for the same key contain mismatched format specifiers.",
+        "ruleName": "Translation format mismatch",
+        "ruleShortName": "TranslationFormatMismatch",
+        "ruleWarning": null
+      },
+      "identifier": "Greeting",
+      "impact": "Functionality",
+      "info": "The Finnish translation for Greeting has different format specifiers than the English translation.Finnish: Hyvää %s, %@!English: Good %@, %@!",
+      "ruleDescription": "Warns when different language translations for the same key contain mismatched format specifiers.",
+      "ruleName": "Translation format mismatch",
+      "ruleShortName": "TranslationFormatMismatch",
+      "ruleWarning": null,
+      "severity": 9,
+      "severityDescription": "Error"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/Arrow.png",
+      "fileSnippet": null,
+      "html": {
+        "info": "The 'retina' version of this image is missing.",
+        "ruleDescription": "Warns when either the high-resolution (@2x) or the low-resolution variant of an image resource is missing.",
+        "ruleName": "Missing image resolution variant",
+        "ruleShortName": "MissingImageResolutionVariant",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Functionality",
+      "info": "The 'retina' version of this image is missing.",
+      "ruleDescription": "Warns when either the high-resolution (@2x) or the low-resolution variant of an image resource is missing.",
+      "ruleName": "Missing image resolution variant",
+      "ruleShortName": "MissingImageResolutionVariant",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/en.lproj/InfoPlist.strings",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The <code class=\"fauxpas-string\">NSContactsUsageDescription</code> Info.plist key is needed but missing.</p> <p>This key is needed due to the usage of the following code symbols:</p><ul><li><code class=\"fauxpas-objcclass\">ABPeoplePickerNavigationController</code></li></ul>",
+        "ruleDescription": "Some APIs (that access e.g. contacts or calendars) require a usage description in the application metadata. This will be shown to the user when the system asks them to allow the application access to the related user data or system resource. This rule warns when some such APIs are used, but the associated usage description is missing.",
+        "ruleName": "Missing API usage description",
+        "ruleShortName": "MissingAPIUsageDescription",
+        "ruleWarning": null
+      },
+      "identifier": "NSContactsUsageDescription",
+      "impact": "Functionality",
+      "info": "The NSContactsUsageDescription Info.plist key is needed but missing. This key is needed due to the usage of the following code symbols:ABPeoplePickerNavigationController",
+      "ruleDescription": "Some APIs (that access e.g. contacts or calendars) require a usage description in the application metadata. This will be shown to the user when the system asks them to allow the application access to the related user data or system resource. This rule warns when some such APIs are used, but the associated usage description is missing.",
+      "ruleName": "Missing API usage description",
+      "ruleShortName": "MissingAPIUsageDescription",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/fi.lproj/InfoPlist.strings",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The <code class=\"fauxpas-string\">NSContactsUsageDescription</code> Info.plist key is needed but missing.</p> <p>This key is needed due to the usage of the following code symbols:</p><ul><li><code class=\"fauxpas-objcclass\">ABPeoplePickerNavigationController</code></li></ul>",
+        "ruleDescription": "Some APIs (that access e.g. contacts or calendars) require a usage description in the application metadata. This will be shown to the user when the system asks them to allow the application access to the related user data or system resource. This rule warns when some such APIs are used, but the associated usage description is missing.",
+        "ruleName": "Missing API usage description",
+        "ruleShortName": "MissingAPIUsageDescription",
+        "ruleWarning": null
+      },
+      "identifier": "NSContactsUsageDescription",
+      "impact": "Functionality",
+      "info": "The NSContactsUsageDescription Info.plist key is needed but missing. This key is needed due to the usage of the following code symbols:ABPeoplePickerNavigationController",
+      "ruleDescription": "Some APIs (that access e.g. contacts or calendars) require a usage description in the application metadata. This will be shown to the user when the system asks them to allow the application access to the related user data or system resource. This rule warns when some such APIs are used, but the associated usage description is missing.",
+      "ruleName": "Missing API usage description",
+      "ruleShortName": "MissingAPIUsageDescription",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 2,
+      "confidenceDescription": "Low",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/kennypowers/projects/MyApp/iOS App/en.lproj/Localizable.strings",
+      "fileSnippet": null,
+      "html": {
+        "info": "The localization string for <code class=\"fauxpas-string\">Greeting</code> in the <code>Localizable</code> table seems to be unused.",
+        "ruleDescription": "Warns about entries in string resource files that are not directly loaded in code (using <code class=\"fauxpas-cmacro\">NSLocalizedString</code> and its variants).",
+        "ruleName": "Unused translation",
+        "ruleShortName": "UnusedTranslation",
+        "ruleWarning": "Please ensure that each entry you remove from your string resource files is in fact unused — in some cases this rule may flag entries that are not actually unused (for example if string resource keys are somehow dynamically determined before supplying them as an argument to <code class=\"fauxpas-cmacro\">NSLocalizedString</code>)."
+      },
+      "identifier": "Localizable Greeting",
+      "impact": "Maintainability",
+      "info": "The localization string for Greeting in the Localizable table seems to be unused.",
+      "ruleDescription": "Warns about entries in string resource files that are not directly loaded in code (using NSLocalizedString and its variants).",
+      "ruleName": "Unused translation",
+      "ruleShortName": "UnusedTranslation",
+      "ruleWarning": "Please ensure that each entry you remove from your string resource files is in fact unused — in some cases this rule may flag entries that are not actually unused (for example if string resource keys are somehow dynamically determined before supplying them as an argument to NSLocalizedString).",
+      "severity": 3,
+      "severityDescription": "Concern"
+    }
+  ],
+  "fauxPasVersion": "1.0",
+  "projectIconBase64PNG": "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",
+  "projectName": "iOS App",
+  "projectPath": "/Users/kennypowers/projects/MyApp/iOS App.xcodeproj",
+  "targetBundleVersion": "1.0",
+  "targetName": "iOS App",
+  "timeStamp": 1409168000,
+  "versionControlRevision": "d821fada9e5c0b4338e7027dab4bd6bacb5c5224",
+  "versionControlSystemName": "Git"
+}
