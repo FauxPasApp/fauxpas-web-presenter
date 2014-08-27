@@ -26,4 +26,4 @@ Installation
 
 Simply have a web server serve the static files in the `app` folder.
 
-You can then load up `index.html` in a web browser, and specify the URL where to load the diagnostics set JSON produced by Faux Pas.
+You can then load up `index.html` in a web browser, supplying the `json` query parameter in order to specify the URL where to load the diagnostics set JSON produced by Faux Pas.
