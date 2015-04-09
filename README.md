@@ -18,7 +18,9 @@ Run the following in the root folder of this repository:
 
 Then open the following URL in a browser:
 
-    http://localhost:8000/app/?json=../example.json
+    http://localhost:8000/app/index.html?json=../example.json
+
+_(The `index.html` part needs to be there only for this example in order to thwart automatic redirections in Python's SimpleHTTPServer.)_
 
 
 Installation
